@@ -1,0 +1,54 @@
+<h2>Detalles Persona</h2>
+
+<hr />
+<div *ngIf="asset">
+
+  <div>
+    <label><b>Nombre: </b></label> {{asset.name}}
+  </div>
+  <div>
+    <label><b>Identificación: </b></label> {{asset.description}}
+  </div>
+  <div>
+    <label><b>Tipo de Activo: </b></label> {{asset.assetType}}
+  </div>
+  <div>
+    <label><b>Serial: </b></label> {{asset.serial}}
+  </div>
+  <div>
+    <label><b>Numero de Inventario: </b></label> {{asset.numberInventory}}
+  </div>
+  <div>
+    <label><b>Peso: </b></label> {{asset.weight}}
+  </div>
+  <div>
+    <label><b>Alto: </b></label> {{asset.height}}
+  </div>
+  <div>
+    <label><b>Ancho: </b></label> {{asset.broad}}
+  </div>
+  <div>
+    <label><b>Largo: </b></label> {{asset.length}}
+  </div>
+  <div>
+    <label><b>Valor de Compra: </b></label> {{asset.purchaseValue}}
+  </div>
+  <div>
+    <label><b>Fecha de Compra: </b></label> {{asset.purchaseDate}}
+  </div>
+  <div>
+    <label><b>Fecha de Baja: </b></label> {{asset.retirementDate}}
+  </div>
+  <div>
+    <label><b>Estado: </b></label> {{asset.assetState}}
+  </div>
+  <div>
+    <label><b>Color: </b></label> {{asset.color}}
+  </div>
+
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Volver a la lista de activos</button>
+<br>

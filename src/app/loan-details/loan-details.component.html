@@ -1,0 +1,22 @@
+<h2>Detalles Prestamo</h2>
+
+<hr />
+<div *ngIf="loan">
+  <div>
+    <label><b>ID: </b></label> {{loan.id}}
+  </div>
+  <div>
+    <label><b>ID Activo: </b></label> {{loan.asset_id}}
+  </div>
+  <div>
+    <label><b>ID Persona: </b></label> {{loan.person_id}}
+  </div>
+  <div>
+    <label><b>ID Area: </b></label> {{loan.area_id}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Volver a la lista de activos</button>
+<br>

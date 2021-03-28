@@ -1,0 +1,17 @@
+<h3>Actualizar Activo</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Serial</label>
+      <input type="text" class="form-control" id="serial" required [(ngModel)]="asset.serial" name="serial">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Fecha de Baja</label>
+      <input type="text" class="form-control" id="retirementDate" required [(ngModel)]="asset.retirementDate" name="retirementDate">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

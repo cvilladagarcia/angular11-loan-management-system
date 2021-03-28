@@ -1,0 +1,22 @@
+<h3>Actualizar Area</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="area.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Ciudad</label>
+      <input type="text" class="form-control" id="city" required [(ngModel)]="area.city" name="city">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Dirección</label>
+      <input type="text" class="form-control" id="address" required [(ngModel)]="area.address" name="address">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

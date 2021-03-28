@@ -1,0 +1,19 @@
+<h2>Detalles Area</h2>
+
+<hr />
+<div *ngIf="area">
+  <div>
+    <label><b>Nombre: </b></label> {{area.name}}
+  </div>
+  <div>
+    <label><b>Ciudad: </b></label> {{area.city}}
+  </div>
+  <div>
+    <label><b>Address: </b></label> {{area.address}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Volver a la lista de areas</button>
+<br>

@@ -1,0 +1,28 @@
+<h2>Detalles Persona</h2>
+
+<hr />
+<div *ngIf="person">
+  <div>
+    <label><b>Tipo Identificación: </b></label> {{person.idType}}
+  </div>
+  <div>
+    <label><b>Identificación: </b></label> {{person.idNumber}}
+  </div>
+  <div>
+    <label><b>Nombres: </b></label> {{person.names}}
+  </div>
+  <div>
+    <label><b>Apellidos: </b></label> {{person.surnames}}
+  </div>
+  <div>
+    <label><b>Fecha Nacimiento: </b></label> {{person.brithDate}}
+  </div>
+  <div>
+    <label><b>Dirección: </b></label> {{person.address}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Volver a la lista de personas</button>
+<br>

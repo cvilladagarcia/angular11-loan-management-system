@@ -1,0 +1,81 @@
+<h3>Crear Activo</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="asset.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Descripción</label>
+      <input type="text" class="form-control" id="description" required [(ngModel)]="asset.description" name="description">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Tipo Activo</label>
+      <input type="text" class="form-control" id="assetType" required [(ngModel)]="asset.assetType" name="assetType">
+    </div>
+
+    <div class="form-group">
+      <label for="name">serial</label>
+      <input type="text" class="form-control" id="serial" required [(ngModel)]="asset.serial" name="serial">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Número de Inventario</label>
+      <input type="text" class="form-control" id="numberInventory" required [(ngModel)]="asset.numberInventory" name="numberInventory">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Peso</label>
+      <input type="text" class="form-control" id="weight" required [(ngModel)]="asset.weight" name="weight">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Alto</label>
+      <input type="text" class="form-control" id="height" required [(ngModel)]="asset.height" name="height">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Ancho</label>
+      <input type="text" class="form-control" id="broad" required [(ngModel)]="asset.broad" name="broad">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Largo</label>
+      <input type="text" class="form-control" id="length" required [(ngModel)]="asset.length" name="length">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Valor de Compra</label>
+      <input type="text" class="form-control" id="purchaseValue" required [(ngModel)]="asset.purchaseValue" name="purchaseValue">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Fecha de Compra(AAAA-MM-DD)</label>
+      <input type="text" class="form-control" id="purchaseDate" required [(ngModel)]="asset.purchaseDate" name="purchaseDate">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Fecha de Baja(AAAA-MM-DD)</label>
+      <input type="text" class="form-control" id="retirementDate" required [(ngModel)]="asset.retirementDate" name="retirementDate">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Estado</label>
+      <input type="text" class="form-control" id="assetState" required [(ngModel)]="asset.assetState" name="assetState">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Color</label>
+      <input type="text" class="form-control" id="color" required [(ngModel)]="asset.color" name="color">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+</div>

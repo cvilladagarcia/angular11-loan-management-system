@@ -1,0 +1,37 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Listar Persona</h2>
+  </div>
+  <div class="panel-body" style="width: 100%;">
+    <table class="table table-striped" style="width: 100%;">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Tipo Documento</th>
+          <th>Identificación</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Fecha Nacimiento</th>
+          <th>Direccion</th>
+          <th>Evento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of persons | async">
+          <td>{{person.id}}</td>
+          <td>{{person.idType}}</td>
+          <td>{{person.idNumber}}</td>
+          <td>{{person.names}}</td>
+          <td>{{person.surnames}}</td>
+          <td>{{person.brithDate}}</td>
+          <td>{{person.address}}</td>
+          <td style="width: 100%;">
+            <button (click)="deletePerson(person.id)" class="btn btn-danger">Delete</button>
+            <button (click)="updatePerson(person.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+            <button (click)="personDetails(person.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
